@@ -1,5 +1,5 @@
 # Mark Montenieri - MS548
-# Week 1 project - Estimated time to complete - 2 hours
+# Week 1 project - Estimated time to complete - 4 hours
 # from textblob lib import TextBlob method
 from textblob import TextBlob
 
