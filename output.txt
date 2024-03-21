@@ -1,6 +1,2 @@
 Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
-Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
-Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
-Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
-Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
-Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
+Menu option 5 (Tuple) output: ('Tuple child 1', 'Tuple child 2', 'Tuple child 3', 'Tuple child 4')
