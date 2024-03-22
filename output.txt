@@ -1,2 +1,8 @@
 Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
 Menu option 5 (Tuple) output: ('Tuple child 1', 'Tuple child 2', 'Tuple child 3', 'Tuple child 4')
+Menu option 5 (Tuple) output: ('Tuple item 1', 'Tuple item 2', 'Tuple item 3', 'Tuple item 4')
+Menu option 5 (Tuple) output: ('Tuple child 1', 'Tuple child 2', 'Tuple child 3', 'Tuple child 4')
+Menu option 3 (Addition) output: 6
+Menu option 1 (Multiply) output: 10
+Menu option 2 (Division) output: 3.0
+Menu option 4 (Sentiment) output: Sentiment(polarity=0.325, subjectivity=0.6166666666666667)

@@ -36,16 +36,6 @@ def task_multiply():
     menu_loop()
 
 
-def validate_num(self, num, num2):  # validate input
-    while True:
-        if num.isdigit() and num2.isdigit():
-            return num, num2
-        else:
-            print("One or more of your inputs was not a number, please start over.")
-            self.task_multiply()
-            break
-
-
 def task_divide():
     # perform division
     first_num = input("Type first number: ")
@@ -72,6 +62,16 @@ def task_add():
     outfile.write(str(sum_result) + "\n")  # Write product to file
     outfile.close()  # Close the file
     menu_loop()
+
+
+def validate_num(num, num2):  # validate input
+    while True:
+        if num.isdigit() and num2.isdigit():
+            return num, num2
+        else:
+            print("One or more of your inputs was not a number, please start over.")
+            task_multiply()
+            break
 
 
 def task_textblob_sentiment():
@@ -123,6 +123,7 @@ def menu_loop():
             elif choice == 2:
                 task_divide()
             elif choice == 3:
+                print("CHOICE ADD")
                 task_add()
             elif choice == 4:
                 task_textblob_sentiment()
@@ -134,7 +135,7 @@ def menu_loop():
         else:
             print("Invalid choice. Please choose a number between 1 and 5")
     except TypeError:
-        print("Invalid")
+        print("Try Exception")
 
 
 if __name__ == "__main__":
