@@ -5,19 +5,31 @@
 from textblob import TextBlob
 
 
-class TuplesParent:
+class TuplesParent:  # Parent class
     def __init__(self):
-        return
+        print("Inside TuplesParent")
 
 
 class TuplesChild(TuplesParent):  # Child class
-    def task_child_tuple(self, tuple_data):
-        x = ("Tuple child 1", "Tuple child 2", "Tuple child 3")
-        print("Tuple Child results: " + str(tuple_data))
+    def __init__(self):
+        print("Inside TuplesChild")
 
+    def task_child_tuple(self, tuple_data):
         print("Child Tuple: " + str(tuple_data))
         outfile = open("output.txt", "a")  # Open file
         outfile.write("Menu option 5 (Tuple) output: ")  # Write to file
+        outfile.write(str(tuple_data) + "\n")  # Write product to file
+        outfile.close()  # Close the file
+
+
+class TuplesSecondChild(TuplesParent):  # Second Child class
+    def __init__(self):
+        super().__init__()  # Super (Executes init code in the Parent class)
+
+    def task_second_child_tuple(self, tuple_data):
+        print("Second Child Tuple: " + str(tuple_data))
+        outfile = open("output.txt", "a")  # Open file
+        outfile.write("Menu option 6 (Second Tuple) output: ")  # Write to file
         outfile.write(str(tuple_data) + "\n")  # Write product to file
         outfile.close()  # Close the file
 
@@ -64,7 +76,7 @@ def task_add():
     menu_loop()
 
 
-def validate_num(num, num2):  # validate input
+def validate_num(num, num2):  # validate user input
     while True:
         if num.isdigit() and num2.isdigit():
             return num, num2
@@ -89,7 +101,8 @@ def task_textblob_sentiment():
 
 
 def task_tuple():
-    simple_tuple = ("Tuple item 1", "Tuple item 2", "Tuple item 3", "Tuple item 4")
+    # Prints tuple values to screen and to file
+    simple_tuple = ("Tuple item 1", "Tuple item 2", "Tuple item 3")
 
     print("Tuple results: " + str(simple_tuple))
     outfile = open("output.txt", "a")  # Open file
@@ -97,14 +110,24 @@ def task_tuple():
     outfile.write(str(simple_tuple) + "\n")  # Write product to file
     outfile.close()  # Close the file
 
+    # Calls Tuple child class
     child_tuple = ("Tuple child 1", "Tuple child 2", "Tuple child 3", "Tuple child 4")
     x = TuplesChild()
     x.task_child_tuple(child_tuple)
-
     menu_loop()
 
 
-def menu_loop():
+def task_second_tuple():
+    # Calls Second Tuple child class
+    second_child_tuple = (
+    "Tuple Second child 1", "Tuple Second child 2", "Tuple Second child 3", "Tuple Second child 4",
+    "Tuple Second child 5")
+    x = TuplesSecondChild()
+    x.task_second_child_tuple(second_child_tuple)
+    menu_loop()
+
+
+def menu_loop():  # Main menu
     try:
         print("\nWelcome to Mark's first Python Project.")
         print("Menu")
@@ -113,10 +136,11 @@ def menu_loop():
         print("3. Add two numbers")
         print("4. Sentiment analysis")
         print("5. Print Tuple")
-        print("6. Exit")
+        print("6. Print Second Tuple")
+        print("7. Exit")
 
-        choice = input("Enter your choice (1-6): ")
-        if choice.isdigit() and 1 <= int(choice) <= 6:
+        choice = input("Enter your choice (1-7): ")
+        if choice.isdigit() and 1 <= int(choice) <= 7:
             choice = int(choice)
             if choice == 1:
                 task_multiply()
@@ -130,13 +154,16 @@ def menu_loop():
             elif choice == 5:
                 task_tuple()
             elif choice == 6:
+                task_second_tuple()
+            elif choice == 7:
                 print("Exiting program")
                 quit()
         else:
-            print("Invalid choice. Please choose a number between 1 and 5")
+            print("Invalid choice. Please choose a number between 1 and 7")
+            menu_loop()  # Reload Menu
     except TypeError:
         print("Try Exception")
 
 
 if __name__ == "__main__":
-    menu_loop()
+    menu_loop()  # Load Menu
