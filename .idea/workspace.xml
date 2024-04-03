@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c39539c-d5f6-474a-b142-b5cf48ed8fb1" name="Changes" comment="Fixed validate_num func">
+    <list default="true" id="6c39539c-d5f6-474a-b142-b5cf48ed8fb1" name="Changes" comment="Refactor, commented, and finished implementing 2nd child class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
@@ -59,7 +59,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -78,7 +78,10 @@
       <workItem from="1711027160649" duration="3048000" />
       <workItem from="1711050128404" duration="1294000" />
       <workItem from="1711101782860" duration="1693000" />
-      <workItem from="1711103616644" duration="1947000" />
+      <workItem from="1711103616644" duration="3079000" />
+      <workItem from="1711113624949" duration="624000" />
+      <workItem from="1712150796386" duration="156000" />
+      <workItem from="1712150991457" duration="3769000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -136,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711103782487</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor, commented, and finished implementing 2nd child class.">
+      <option name="closed" value="true" />
+      <created>1711105702112</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711105702112</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,10 +172,11 @@
     <MESSAGE value="Not working but program does run without error" />
     <MESSAGE value="Program runs ok, now need to get parent and children classes sorted" />
     <MESSAGE value="Fixed validate_num func" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed validate_num func" />
+    <MESSAGE value="Refactor, commented, and finished implementing 2nd child class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor, commented, and finished implementing 2nd child class." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1711105211524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1712154648037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MS548_Week1_MarkMontenieri$main.coverage" NAME="main Coverage Results" MODIFIED="1710526807440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 # Mark Montenieri - MS548
-# Week 1 project - Estimated time to complete - 4 hours
-# Actual time to complete - 7 hours
+# Week 3 project - Estimated time to complete - 2 hours
+# Actual time to complete - 2 hours
 # from textblob lib import TextBlob method
 from textblob import TextBlob
 
@@ -120,10 +120,47 @@ def task_tuple():
 def task_second_tuple():
     # Calls Second Tuple child class
     second_child_tuple = (
-    "Tuple Second child 1", "Tuple Second child 2", "Tuple Second child 3", "Tuple Second child 4",
-    "Tuple Second child 5")
+        "Tuple Second child 1", "Tuple Second child 2", "Tuple Second child 3", "Tuple Second child 4",
+        "Tuple Second child 5")
     x = TuplesSecondChild()
     x.task_second_child_tuple(second_child_tuple)
+    menu_loop()
+
+
+def task_textblob_correct():
+    # Textblob - try to correct spelling
+    text_input = input("Type a word or sentence with poor spelling ")
+    x = TextBlob(text_input)
+    x = x.correct()
+    print(x)
+    menu_loop()
+
+
+def task_textblob2():
+    # Textblob - convert text to upper-case
+    text_input = input("Type a word or sentence to convert to upper-case ")
+    x = TextBlob(text_input)
+    x = x.upper()
+    print(x)
+    menu_loop()
+
+
+def task_colorama1():
+    # Colorama - display colored text
+    from colorama import Fore, Style  # local import (I wanted to see if it worked)
+    print(Fore.BLUE + 'This text is in blue!')
+    print(Style.RESET_ALL + 'This text is back to normal')
+    menu_loop()
+
+
+def task_colorama2():
+    # Colorama - display colored text and background
+    from colorama import Fore, Back, Style  # local import (I wanted to see if it worked)
+    print(Fore.RED + 'This text is in red!')
+    print(Style.RESET_ALL + 'This text is back to normal')
+    print(Fore.YELLOW + 'This text is in yellow!')
+    print(Back.RED + 'This text is on a red background!')
+    print(Style.RESET_ALL + 'This text is back to normal')
     menu_loop()
 
 
@@ -137,10 +174,14 @@ def menu_loop():  # Main menu
         print("4. Sentiment analysis")
         print("5. Print Tuple")
         print("6. Print Second Tuple")
-        print("7. Exit")
+        print("7. Textblob - Attempt to correct spelling")
+        print("8. Textblob - Convert text to upper-case")
+        print("9. Colorama - Print colored text")
+        print("10. Colorama - Print colored text & colored background")
+        print("11. Exit")
 
-        choice = input("Enter your choice (1-7): ")
-        if choice.isdigit() and 1 <= int(choice) <= 7:
+        choice = input("Enter your choice (1-11): ")
+        if choice.isdigit() and 1 <= int(choice) <= 11:
             choice = int(choice)
             if choice == 1:
                 task_multiply()
@@ -156,10 +197,18 @@ def menu_loop():  # Main menu
             elif choice == 6:
                 task_second_tuple()
             elif choice == 7:
+                task_textblob_correct()
+            elif choice == 8:
+                task_textblob2()
+            elif choice == 9:
+                task_colorama1()
+            elif choice == 10:
+                task_colorama2()
+            elif choice == 11:
                 print("Exiting program")
                 quit()
         else:
-            print("Invalid choice. Please choose a number between 1 and 7")
+            print("Invalid choice. Please choose a number between 1 and 9")
             menu_loop()  # Reload Menu
     except TypeError:
         print("Try Exception")
