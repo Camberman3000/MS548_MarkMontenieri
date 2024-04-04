@@ -3,6 +3,7 @@
 # Actual time to complete - 2 hours
 # from textblob lib import TextBlob method
 from textblob import TextBlob
+from emoji import emojize
 
 
 class TuplesParent:  # Parent class
@@ -127,21 +128,15 @@ def task_second_tuple():
     menu_loop()
 
 
-def task_textblob_correct():
-    # Textblob - try to correct spelling
-    text_input = input("Type a word or sentence with poor spelling ")
-    x = TextBlob(text_input)
-    x = x.correct()
-    print(x)
+def task_emoji1():
+    # Emoji - thumbs up
+    print(emojize(":thumbs_up:"))
     menu_loop()
 
 
-def task_textblob2():
-    # Textblob - convert text to upper-case
-    text_input = input("Type a word or sentence to convert to upper-case ")
-    x = TextBlob(text_input)
-    x = x.upper()
-    print(x)
+def task_emoji2():
+    # Emoji - clown face
+    print(emojize(":clown_face:"))
     menu_loop()
 
 
@@ -174,8 +169,8 @@ def menu_loop():  # Main menu
         print("4. Sentiment analysis")
         print("5. Print Tuple")
         print("6. Print Second Tuple")
-        print("7. Textblob - Attempt to correct spelling")
-        print("8. Textblob - Convert text to upper-case")
+        print("7. Emoji - Thumbs Up")
+        print("8. Emoji -Clown face")
         print("9. Colorama - Print colored text")
         print("10. Colorama - Print colored text & colored background")
         print("11. Exit")
@@ -197,9 +192,9 @@ def menu_loop():  # Main menu
             elif choice == 6:
                 task_second_tuple()
             elif choice == 7:
-                task_textblob_correct()
+                task_emoji1()
             elif choice == 8:
-                task_textblob2()
+                task_emoji2()
             elif choice == 9:
                 task_colorama1()
             elif choice == 10:

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c39539c-d5f6-474a-b142-b5cf48ed8fb1" name="Changes" comment="Refactor, commented, and finished implementing 2nd child class.">
+    <list default="true" id="6c39539c-d5f6-474a-b142-b5cf48ed8fb1" name="Changes" comment="Week 3 Project">
+      <change beforePath="$PROJECT_DIR$/.idea/MS548_Week1_MarkMontenieri.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MS548_Week1_MarkMontenieri.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,10 @@
       <workItem from="1711103616644" duration="3079000" />
       <workItem from="1711113624949" duration="624000" />
       <workItem from="1712150796386" duration="156000" />
-      <workItem from="1712150991457" duration="3769000" />
+      <workItem from="1712150991457" duration="4268000" />
+      <workItem from="1712228754777" duration="795000" />
+      <workItem from="1712229969711" duration="193000" />
+      <workItem from="1712230179766" duration="242000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -147,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711105702112</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Week 3 Project">
+      <option name="closed" value="true" />
+      <created>1712154799341</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712154799341</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,10 +185,11 @@
     <MESSAGE value="Program runs ok, now need to get parent and children classes sorted" />
     <MESSAGE value="Fixed validate_num func" />
     <MESSAGE value="Refactor, commented, and finished implementing 2nd child class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor, commented, and finished implementing 2nd child class." />
+    <MESSAGE value="Week 3 Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 3 Project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1712154648037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1712230365004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MS548_Week1_MarkMontenieri$main.coverage" NAME="main Coverage Results" MODIFIED="1710526807440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
